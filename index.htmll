@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+<meta charset=utf-8>
+<meta http-equiv=X-UA-Compatible content="IE=edge">
+<meta name=viewport
+	content="width=device-width,initial-scale=1,shrink-to-fit=no">
+
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/cherrybase/cherrybase.github.io@26dc77038c9938a490a367b79a646ee921d39d0c/favicon.ico" />
+
+<title>socnect - Page</title>
+
+
+	
+	
+		<link rel=stylesheet
+			href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900">
+		
+		<!-- // preload  css and js -->
+		<link href="https://cdn.jsdelivr.net/gh/cherrybase/cherrybase.github.io@26dc77038c9938a490a367b79a646ee921d39d0c/app-account.js?_=5529430" rel=preload
+			as=script>
+		<link href="https://cdn.jsdelivr.net/gh/cherrybase/cherrybase.github.io@26dc77038c9938a490a367b79a646ee921d39d0c/css/chunk-common.css?_=5529430"
+			rel=preload as=style>
+		<link href="https://cdn.jsdelivr.net/gh/cherrybase/cherrybase.github.io@26dc77038c9938a490a367b79a646ee921d39d0c/js/chunk-vendors.js?_=5529430"
+			rel=preload as=script>
+		<link href="https://cdn.jsdelivr.net/gh/cherrybase/cherrybase.github.io@26dc77038c9938a490a367b79a646ee921d39d0c/js/chunk-common.js?_=5529430"
+			rel=preload as=script>
+			
+		<!-- // load  css -->
+		<link
+			href="https://cdn.jsdelivr.net/gh/cherrybase/cherrybase.github.io@26dc77038c9938a490a367b79a646ee921d39d0c/css/chunk-vendors.css?_=5529430"
+			rel=stylesheet>
+		<link href="https://cdn.jsdelivr.net/gh/cherrybase/cherrybase.github.io@26dc77038c9938a490a367b79a646ee921d39d0c/css/chunk-common.css?_=5529430"
+			rel=stylesheet />
+
+	
+
+
+
+
+<script>
+	window.CONST = {
+		TENANT : 'app',
+		DOMAIN : '', 
+		dev : 'false',
+		CDN_URL : 'https://cdn.jsdelivr.net/gh/cherrybase/cherrybase.github.io@26dc77038c9938a490a367b79a646ee921d39d0c', //
+		APP_CONTEXT : '/', APP : 'front',//
+		remoteJsVersion : '5529430', //
+		APP_DOMAIN : 'app', APP_DOMAIN_ID : '613cf9e1142e532526892dc1', APP_VIEW : 'DEFAULT',
+		CONTEXT: '/', "APP_USER" : '',"APP_DEPT" : '',"APP_USER_ROLE" : 'GUEST',
+		CONFIG : ({"PROP_SERVICE_PRIVACY_MD":"https://cdn.jsdelivr.net/gh/mehery-soccom/mehery-soccom.github.io@latest/content/static/app/socnect/privacy.md","PROP_LOGO_BG_X_LOGO_B":"https://cdn.jsdelivr.net/gh/mehery-soccom/mehery-soccom.github.io@latest/content/static/app/socnect/bg-x-logo-b.png","PROP_LOGO_192":"https://cdn.jsdelivr.net/gh/cherrybase/cherrybase.github.io@a19c367e3438cfa0cb9608ef5701b6b488c19790/favicon/android-chrome-192x192.png","CHAT_TAG_ENABLED":false,"PROP_MRY_DOMAIN_AGENT_ACTIVE":"true","PROP_MRY_DOMAIN_UPLOAD_FILESIZE_LIMIT":"20","PROP_SOCIAL_FACEBOOK":"socnect","PROP_SERVICE_DOCS_API_LINK":"https://docs.mehery.com/server-xms/","PROP_SOCIAL_TELEGRAM":"socnectbot","PROP_SERVICE_WEBSITE_LINK":"https://www.socnect.com","PROP_LOGO_BG_W_LOGO_B":"https://cdn.jsdelivr.net/gh/mehery-soccom/mehery-soccom.github.io@latest/content/static/app/socnect/bg-w-logo-b.png","PROP_SERVICE_DOCS_LINK":"https://docs.socnect.com","PROP_SOCIAL_INSTAGRAM":"socnectcom","chatSessionTimeout":86400000,"PROP_SERVICE_DOMAIN":"mehery.com","PROP_SERVICE_NAME":"socnect","PROP_LOGO_BG_X_ICON":"https://cdn.jsdelivr.net/gh/mehery-soccom/mehery-soccom.github.io@latest/content/static/app/socnect/bg-x-icon.png","PROP_SERVICE_ABOUTUS_MD":"https://cdn.jsdelivr.net/gh/mehery-soccom/mehery-soccom.github.io@latest/content/static/app/socnect/aboutus.md","PROP_SERVICE_PRIVACY_LINK":"https://app.socnect.com/front/pub/read/privacy","PROP_SERVICE_DOCS_CHAT_LINK":"https://docs.mehery.com/chat-widget/","PROP_SERVICE_WEBSITE":"www.socnect.com","PROP_SERVICE_TOS_LINK":"https://app.socnect.com/front/pub/read/tos","timestamp":1658829122957,"PROP_SOCIAL_GITHUB":"","AGENT_CHAT_INIT":true,"PROP_LOGO_BG_X_LOGO":"https://cdn.jsdelivr.net/gh/mehery-soccom/mehery-soccom.github.io@latest/content/static/app/socnect/bg-x-logo.png","PROP_SERVICE_SERVER":"socnect.com","agentSessionTimeout":600000,"chatIdleTimeout":300000,"PROP_SERVICE_TOS_MD":"https://cdn.jsdelivr.net/gh/mehery-soccom/mehery-soccom.github.io@latest/content/static/app/socnect/tos.md","PROP_LOGO_BG_X_ICON_W":"https://cdn.jsdelivr.net/gh/mehery-soccom/mehery-soccom.github.io@latest/content/static/app/socnect/bg-x-icon-w.png","PROP_SERVICE_BLOG_LINK":"https://www.mehery.com/blog","PROP_SOCIAL_EMAIL":"contact@mehery.com","PROP_SERVICE_ABOUTUS_LINK":"https://app.socnect.com/front/pub/read/aboutus","PROP_SOCIAL_WHATSAPP":"923011155676","SETUP":{"POSTMAN_AGENT_TAB_ORG":null,"POSTMAN_NLP_DETECT_PERSONS":null,"POSTMAN_NLP_DETECT_SENTIMENT":null,"POSTMAN_CHAT_CHANNEL_SANDBOX":"OFF","POSTMAN_CHAT_WEB_CHANNEL":"web:socnect.com","CHAT_TAG_ENABLED":false,"POSTMAN_AGENT_TAB_HISTORY_LIMIT":null,"POSTMAN_CHAT_WEB_CHANNEL_KEY":"1gdmxikhbf5fz56SR5JRDFY","POSTMAN_BOT_CODE":null,"POSTMAN_CONTACT_DETAILS_URL":"","POSTMAN_NLP_DETECT_CITIES":null,"POSTMAN_PHONEBOOK_REGION":null,"POSTMAN_CHAT_IDLE_TIMEOUT":"5min","POSTMAN_NLP_DETECT_LOCATIONS":null,"POSTMAN_AGENT_CHAT_INIT_CONTACT":true,"POSTMAN_AGENT_TAB_NONAGENT":null,"POSTMAN_AGENT_CHAT_AUTOREPLY_NOAGENT":null,"POSTMAN_AGENT_CHAT_ASSIGNMENT":null,"POSTMAN_AGENT_CHAT_AUTOREPLY_RESOLVED":"60d23656142e53561cb7716b","POSTMAN_CHAT_AGENT_QUEUE":null,"POSTMAN_AGENT_CHAT_FREETEXT_CC":null,"POSTMAN_AGENT_TAB_HISTORY_PERIOD":604800000,"POSTMAN_NLP_DETECT_ORGANIZATIONS":null,"POSTMAN_AGENT_CHAT_STICKYSESSION":null,"POSTMAN_NLP_DETECT_LANG":null,"POSTMAN_AGENT_CHAT_INIT":true,"POSTMAN_AGENT_CHAT_REASSIGNMENT_AUTO":null,"POSTMAN_AGENT_CHAT_INIT_SESSION":true,"POSTMAN_BOT_NAME":"MyR","POSTMAN_DEBUG_CONTACT":null,"POSTMAN_AGENT_CHAT_AUTOREPLY_TALK2AGENT":null,"POSTMAN_CHAT_INBOUND_QUEUE":null,"POSTMAN_AGENT_SCHEME_COLOR":"#4267b2","POSTMAN_NLP_DETECT_CATEGORIES":null,"POSTMAN_CHAT_SESSION_TIMEOUT":"24hr","POSTMAN_NLP_DETECT_COUNTRIES":null,"POSTMAN_CHAT_FEEDBACK_QUEUE":null},"PROP_THEME_DOT_1":"FFFFFF","PROP_MRY_DOMAIN_XMS_ACTIVE":"true","PROP_THEME_DOT_3":"FFFFFF","PROP_THEME_DOT_2":"FFFFFF","PROP_LOGO_BG_W_LOGO":"https://cdn.jsdelivr.net/gh/mehery-soccom/mehery-soccom.github.io@latest/content/static/app/socnect/bg-w-logo.png","PROP_LOGO_BG_X_LOGO_W":"https://cdn.jsdelivr.net/gh/mehery-soccom/mehery-soccom.github.io@latest/content/static/app/socnect/bg-x-logo-w.png","PROP_MRY_DOMAIN_ACTIVE":"true","PROP_LOGO_BG_B_LOGO_W":"https://cdn.jsdelivr.net/gh/mehery-soccom/mehery-soccom.github.io@latest/content/static/app/socnect/bg-b-logo-w.png","PROP_SOCIAL_TWITTER":"socnect"})
+	};
+</script>
+</head>
+<body>
+	<noscript>
+		<strong>We're sorry but ArchitectUI doesn't work properly
+			without JavaScript enabled. Please enable it to continue.</strong>
+	</noscript>
+	<div id=app></div>
+	
+ 
+  
+  
+  		<!-- // load  js if prod -->
+  	  	<script src="https://cdn.jsdelivr.net/gh/cherrybase/cherrybase.github.io@26dc77038c9938a490a367b79a646ee921d39d0c/js/chunk-vendors.js?_=5529430"></script>
+  	  	<script src="https://cdn.jsdelivr.net/gh/cherrybase/cherrybase.github.io@26dc77038c9938a490a367b79a646ee921d39d0c/js/chunk-common.js?_=5529430"></script>
+		<script src="https://cdn.jsdelivr.net/gh/cherrybase/cherrybase.github.io@26dc77038c9938a490a367b79a646ee921d39d0c/app-front.js?_=5529430"></script>
+   
+
+
+
+</body>
+
+
+
+
+
+</html>
