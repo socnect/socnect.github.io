@@ -58,6 +58,29 @@
 		<strong>We're sorry but ArchitectUI doesn't work properly
 			without JavaScript enabled. Please enable it to continue.</strong>
 	</noscript>
+	<script>
+	      // Single Page Apps for GitHub Pages
+	      // CREDITS: https://github.com/rafgraph/spa-github-pages
+	      // See also 404.html
+	      window.CONST = Object.assign(window.CONST || {},((l) => {
+		console.log("search",l.search)
+		if (l.search[1] !== '/' ) {
+		  return
+		}
+		const decoded = l.search.slice(1).split('&');
+		let CONST = JSON.parse(decodeURIComponent(decoded[1].split("=")[1]));
+		let search = decoded[0] + (decoded[2] ? ("?" + decoded[2].replace(/~and~/g, '&')) : "");
+
+		let dest = l.pathname.slice(0, -1) + search + l.hash;
+		console.log("dest",dest,CONST)
+		  window.history.replaceState(
+		    null, null,
+		    dest
+		  );
+		return CONST;
+	      })(window.location))
+    	</script>
+	
 	<div id=app></div>
 	
  
